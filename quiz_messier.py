@@ -7,7 +7,7 @@ if getattr(sys, 'frozen', False):
     FOLDER_DE_BAZA = os.path.dirname(sys.executable)
 else:
     FOLDER_DE_BAZA = os.path.dirname(os.path.abspath(__file__))
-FOLDER_MESSIER = os.path.join(FOLDER_DE_BAZA, "messier")
+FOLDER_MESSIER = FOLDER_DE_BAZA
 class JocMessier:
     def __init__(self, root):
         self.root = root
